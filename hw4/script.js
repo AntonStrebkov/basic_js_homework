@@ -10,15 +10,15 @@
 10 – четное число
 */
 
-// for (let i = 0; i <= 10; i++) {
-//     if (i === 0) {
-//         console.log(`${i} - это ноль`);
-//     } else if (i % 2 !== 0) {
-//         console.log(`${i} - нечетное число`);
-//     } else {
-//         console.log(`${i} - четное число`);
-//     }
-// }
+for (let i = 0; i <= 10; i++) {
+  if (i === 0) {
+    console.log(`${i} - это ноль`);
+  } else if (i % 2 !== 0) {
+    console.log(`${i} - нечетное число`);
+  } else {
+    console.log(`${i} - четное число`);
+  }
+}
 
 /*
 Задание 2
@@ -27,7 +27,7 @@
 */
 
 const arr = [1, 2, 3, 4, 5, 6, 7];
-console.log(arr.splice(3, 4));
+console.log(arr.splice(3, 2));
 console.log(arr);
 
 /*
@@ -38,33 +38,33 @@ console.log(arr);
 3. Найти есть ли в этом массиве число 3
 */
 
-// const arr = [];
-// for (let i = 0; i < 5; i++) {
-//   let r = Math.floor(Math.random() * 10);
-//   arr.push(r);
-// }
-// console.log(arr);
-// let result = 0;
-// for (let i = 0; i < arr.length; i++) {
-//     result += arr[i];
-// }
-// console.log(`Сумма чисел в массиве = ${result}`);
-// minElement = arr[0];
-// for (let i = 0; i < arr.length; i++) {
-//     if (minElement > arr[i]) {
-//         minElement = arr[i];
-//     } else {
-//         continue;
-//     }
-// }
-// console.log(`Минимальный элемент массива = ${minElement}`);
-// for (let i = 0; i < arr.length; i++) {
-//     if (arr[i] === 3) {
-//         console.log('В массиве присутствует число 3');
-//     } else {
-// continue;
-//     }
-// }
+const arr = [];
+for (let i = 0; i < 5; i++) {
+  let r = Math.floor(Math.random() * 10);
+  arr.push(r);
+}
+console.log(arr);
+let result = 0;
+for (let i = 0; i < arr.length; i++) {
+  result += arr[i];
+}
+console.log(`Сумма чисел в массиве = ${result}`);
+minElement = arr[0];
+for (let i = 0; i < arr.length; i++) {
+  if (minElement > arr[i]) {
+    minElement = arr[i];
+  } else {
+    continue;
+  }
+}
+console.log(`Минимальный элемент массива = ${minElement}`);
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] === 3) {
+    console.log("В массиве присутствует число 3");
+  } else {
+    continue;
+  }
+}
 
 /*
 *Необязательное задание. *
@@ -77,8 +77,8 @@ xxxx
 xxxxx
 */
 
-// let str = "";
-// for (let i = 0; i < 20; i++) {
-//   str += "x";
-//   console.log(str);
-// }
+let str = "";
+for (let i = 0; i < 20; i++) {
+  str += "x";
+  console.log(str);
+}
