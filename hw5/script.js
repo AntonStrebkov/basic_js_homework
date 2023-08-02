@@ -204,4 +204,8 @@ const ru = [
   "суббота",
   "воскресенье",
 ];
-for (let i = 0; i < en.length; i++) {}
+const obj = {};
+for (let i = 0; i < en.length; i++) {
+  obj[en[i]] = ru[i];
+}
+console.log(obj);
